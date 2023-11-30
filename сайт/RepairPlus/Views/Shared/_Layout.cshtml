@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @await Html.PartialAsync("MetaTagPartial")
+    
+    @await Html.PartialAsync("CssPartial")
+
+
+</head>
+<body>
+    
+    @await Html.PartialAsync("HeaderPartial")
+
+    @RenderBody()
+
+    @await Html.PartialAsync("FooterPartial")
+
+
+    @await Html.PartialAsync("ScriptPartial")
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

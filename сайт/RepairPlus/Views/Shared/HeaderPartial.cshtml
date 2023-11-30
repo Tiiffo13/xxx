@@ -1,0 +1,119 @@
+﻿<!--Start header area-->
+<header class="header-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="logo">
+                    <a asp-controller="Home" asp-action="Index">
+                        <img src="https://st.ourhtmldemo.com/new/RepairPlus/images/resources/logo.png" alt="Awesome Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <div class="header-contact-info">
+                    <ul>
+                        <li>
+                            <div class="iocn-holder">
+                                <span class="flaticon-home-page"></span>
+                            </div>
+                            <div class="text-holder">
+                                <h5>Московская область</h5>
+                                <h6>Ул. Пушкин, д.17</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="iocn-holder">
+                                <span class="flaticon-clock"></span>
+                            </div>
+                            <div class="text-holder">
+                                <h5>Время работы</h5>
+                                <h6>ПН - СБ: 09.00 до 18.00</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="iocn-holder">
+                                <span class="flaticon-envelope"></span>
+                            </div>
+                            <div class="text-holder">
+                                <h5>Почта</h5>
+                                <h6>Supportyou@Repairplus.com</h6>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Start mainmenu area-->
+<section class="mainmenu-area stricky">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <!--Start mainmenu-->
+                <nav class="main-menu">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            <li><a asp-controller="Home" asp-action="Index">Главная страница</a>
+                                <ul>
+                                    <li><a asp-controller="Home" asp-action="About">О нас</a></li>
+                                </ul>
+                            </li>
+                           
+                            <li><a asp-controller="Home" asp-action="Contact">Контакты</a></li>
+                            <li><a asp-controller="Order" asp-action="Create">Оформить заказ</a></li>
+                            
+
+                            @if (User.Identity?.IsAuthenticated ?? false)
+                            {
+                                <li>
+                                    <a>@User.Identity.Name</a>
+
+                                    <ul>
+                                        <li><a asp-controller="Order" asp-action="Details">История заказов</a></li>
+                                        <li><a asp-controller="Account" asp-action="Logout">Выход</a></li>
+                                    </ul>
+
+                                </li>
+
+                            }
+                            else
+                            {
+                                <li>
+                                    <a>Авторизация</a>
+                                    <ul>
+                                        <li><a asp-controller="Account" asp-action="Create">Регистрация</a></li>
+                                        <li><a asp-controller="Account" asp-action="Login">Вход</a></li>
+                                    </ul>
+
+                                </li>
+                                
+                            }
+                        </ul>
+                    </div>
+                </nav>
+                <!--End mainmenu-->
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="customer-care pull-left">
+                    <div class="icon-holder">
+                        <span class="flaticon-cell-phone"></span>
+                    </div>
+                    <div class="title-holder">
+                        <h5>Служба поддержки</h5>
+                        <h4>1800-56-78-9012</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End mainmenu area-->
+<!--End header area--> 

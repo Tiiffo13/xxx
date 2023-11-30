@@ -1,0 +1,65 @@
+﻿@model List<RepairPlus.Models.Order>
+
+<section class="breadcrumb-area">
+    <div class="container text-center">
+        <h1>Заказы</h1>
+    </div>
+</section>
+
+<section class="team-area">
+    <div class="container">
+        @if (Model != null && Model.Any())
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Имя</th>
+                        <th>Email</th>
+                        <th>Дата</th>
+                        <th>Время</th>
+                        <th>Сервис</th>
+                        <th>Телефон</th>
+                        <th>Сообщение</th>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <th>Имя пользователя</th>
+                            <th>Email пользователя</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var order in Model)
+                    {
+                        <tr>
+                            <td>@order.Name</td>
+                            <td>@order.Email</td>
+                            <td>@order.Date.ToShortDateString()</td>
+                            <td>@order.Time</td>
+                            <td>@order.Service</td>
+                            <td>@order.Phone</td>
+                        <td class="message-column"> @Html.Raw(order.Message)</td>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <td>@order.User.UserName</td>
+                                <td>@order.User.Email</td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>У вас нет заказов.</p>
+        }
+        </div>
+</section>
+
+<style>
+    .message-column {
+        max-width: 200px; /* Установите максимальную ширину столбца "Message" */
+        overflow: hidden;
+        text-overflow: ellipsis; /* Добавляет многоточие, если текст выходит за границы */
+        white-space: nowrap; /* Запрещает перенос текста */
+    }
+</style>
