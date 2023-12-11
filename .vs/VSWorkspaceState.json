@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\website",
+    "\\\u0441\u0430\u0439\u0442",
+    "\\\u0441\u0430\u0439\u0442\\RepairPlus",
+    "\\\u0441\u0430\u0439\u0442\\RepairPlus\\Migrations",
+    "\\\u0441\u0430\u0439\u0442\\RepairPlus\\Views",
+    "\\\u0441\u0430\u0439\u0442\\RepairPlus\\Views\\Account"
+  ],
+  "SelectedNode": "\\\u0441\u0430\u0439\u0442\\RepairPlus\\Views\\Account\\Login.cshtml",
+  "PreviewInSolutionExplorer": false
+}

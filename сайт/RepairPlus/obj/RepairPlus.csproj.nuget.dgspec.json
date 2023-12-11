@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\RepairPlus-main\\RepairPlus\\RepairPlus.csproj": {}
+    "C:\\Users\\foren\\Desktop\\xxx\\сайт\\RepairPlus\\RepairPlus.csproj": {}
   },
   "projects": {
-    "C:\\RepairPlus-main\\RepairPlus\\RepairPlus.csproj": {
+    "C:\\Users\\foren\\Desktop\\xxx\\сайт\\RepairPlus\\RepairPlus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\RepairPlus-main\\RepairPlus\\RepairPlus.csproj",
+        "projectUniqueName": "C:\\Users\\foren\\Desktop\\xxx\\сайт\\RepairPlus\\RepairPlus.csproj",
         "projectName": "RepairPlus",
-        "projectPath": "C:\\RepairPlus-main\\RepairPlus\\RepairPlus.csproj",
+        "projectPath": "C:\\Users\\foren\\Desktop\\xxx\\сайт\\RepairPlus\\RepairPlus.csproj",
         "packagesPath": "C:\\Users\\foren\\.nuget\\packages\\",
-        "outputPath": "C:\\RepairPlus-main\\RepairPlus\\obj\\",
+        "outputPath": "C:\\Users\\foren\\Desktop\\xxx\\сайт\\RepairPlus\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

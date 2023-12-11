@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5q9lsZF97fZN0JN6Z1F+KXo3mudMl6neAuMQwLDCUtgmxBHap1P60Sf60lDaTCwyZfwcFO8sXQZOvloakwh6Cw==",
+  "dgSpecHash": "avUG1K0j6zLEZsEnXVplm6t9TOcuSTLXJVpwbchsIK1a5xFvbxWmGB/5hDvgsXY12Knq7i5F7hKcDUuoAQV8zw==",
   "success": true,
-  "projectFilePath": "C:\\RepairPlus-main\\RepairPlus\\RepairPlus.csproj",
+  "projectFilePath": "C:\\Users\\foren\\Desktop\\xxx\\сайт\\RepairPlus\\RepairPlus.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\foren\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\foren\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
